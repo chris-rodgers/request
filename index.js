@@ -1,3 +1,7 @@
+/**
+ * @param {string} url - The URL.
+ * @param {string} method - The method.
+ */
 export default (url, method = "GET") => {
 	const request = new XMLHttpRequest();
 
