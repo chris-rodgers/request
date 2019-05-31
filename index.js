@@ -1,4 +1,4 @@
-export default (url, method) => {
+export default (url, method = "GET") => {
 	const request = new XMLHttpRequest();
 
 	return new Promise(function(resolve, reject) {
@@ -13,7 +13,7 @@ export default (url, method) => {
 				});
 			}
 		};
-		request.open(method || "GET", url, true);
+		request.open(method, url, true);
 		request.send();
 	});
 };
